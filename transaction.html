@@ -1,0 +1,76 @@
+!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Customer Profile</title>
+    <link rel="stylesheet" href="styles.css">
+    <style>
+        body, html {
+            margin: 0;
+            padding: 0;
+            width: 100%;
+            height: 100%;
+            background-color: black;
+            color: white;
+            font-family: Arial, sans-serif;
+        }
+        
+        .navbar {
+            display: flex;
+            align-items: center;
+            width: 100%;
+            background-color: darkred;
+            overflow: hidden;
+        }
+        
+        .icon-container {
+            display: flex;
+            align-items: center;
+            padding: 10px;
+        }
+        
+        .icon {
+            width: 30px;
+            height: 30px;
+        }
+        
+        .navbar ul {
+            display: flex;
+            list-style-type: none;
+            margin: 0;
+            padding: 0;
+        }
+        
+        .navbar li {
+            flex: 1;
+            margin: 0 10px; /* Adding margin to space out the links */
+        }
+        
+        .navbar li a {
+            display: block;
+            color: white;
+            text-align: center;
+            padding: 14px 20px;
+            text-decoration: none;
+        }
+        
+        .navbar li a:hover {
+            background-color: #111;
+        }
+        
+        /* Specific style for the "View Reports" button */
+        .navbar li a.small-button {
+            padding: 10px 15px; /* Smaller padding for the "View Reports" button */
+            font-size: 0.9em; /* Smaller font size for the "View Reports" button */
+        }
+        
+        .content {
+            display: flex;
+            justify-content: center;
+            align-items: flex-start;
+            height: calc(100% - 50px); /* Adjusting height to account for navbar */
+            padding: 20px;
+        }
+    </style>
+</head>

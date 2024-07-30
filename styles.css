@@ -1,0 +1,193 @@
+body, html {
+    margin: 0;
+    padding: 0;
+    width: 100%;
+    height: 100%;
+    background-color: black;
+    color: white;
+    font-family: Arial, sans-serif;
+}
+
+.navbar {
+    display: flex;
+    align-items: center;
+    width: 100%;
+    background-color: darkred;
+    overflow: hidden;
+}
+
+.icon-container {
+    display: flex;
+    align-items: center;
+    padding: 10px;
+}
+
+.icon {
+    width: 30px;
+    height: 30px;
+}
+
+.navbar ul {
+    display: flex;
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+}
+
+.navbar li {
+    flex: 1;
+    margin: 0 10px; /* Adding margin to space out the links */
+}
+
+.navbar li a {
+    display: block;
+    color: white;
+    text-align: center;
+    padding: 14px 20px;
+    text-decoration: none;
+}
+
+.navbar li a:hover {
+    background-color: #111;
+}
+
+/* Specific style for the "View Reports" button */
+.navbar li a.small-button {
+    padding: 10px 15px; /* Smaller padding for the "View Reports" button */
+    font-size: 0.9em; /* Smaller font size for the "View Reports" button */
+}
+
+.content {
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+    height: calc(100% - 50px); /* Adjusting height to account for navbar */
+    padding: 20px;
+}
+
+.user-details-box {
+    background-color: white;
+    color: black;
+    padding: 20px;
+    width: 300px;
+    border-radius: 10px;
+}
+
+.user-picture {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 20px;
+}
+
+.user-picture img {
+    width: 100px;
+    height: 100px;
+    border-radius: 50%;
+    object-fit: cover;
+}
+
+.user-info {
+    margin-bottom: 20px;
+}
+
+.edit-button {
+    display: block;
+    width: 100%;
+    padding: 10px;
+    background-color: darkred;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.edit-button:hover {
+    background-color: #111;
+}
+
+.container {
+    flex: 1;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.side-boxes {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: flex-start;
+}
+
+.small-box {
+    background-color: white;
+    color: black;
+    padding: 10px;
+    width: 200px;
+    margin-bottom: 20px;
+    border-radius: 10px;
+    text-align: center;
+}
+
+.tall-box {
+    background-color: white;
+    color: black;
+    padding: 10px;
+    width: 200px;
+    height: 300px;
+    border-radius: 10px;
+    text-align: center;
+}
+
+.search-box {
+    background-color: white;
+    color: black;
+    padding: 20px;
+    width: 300px;
+    border-radius: 10px;
+    text-align: left;
+}
+
+.search-box form {
+    display: flex;
+    flex-direction: column;
+}
+
+.search-box label {
+    margin-bottom: 5px;
+}
+
+.search-box input {
+    margin-bottom: 10px;
+    padding: 5px;
+    border-radius: 5px;
+    border: 1px solid #ccc;
+}
+
+.search-box button {
+    padding: 10px;
+    background-color: darkred;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.search-box button:hover {
+    background-color: #111;
+}
+
+#search-results {
+    margin-top: 20px;
+}
+
+.customer-result {
+    background-color: #111;
+    border: none;
+}
+
+
+
+
+

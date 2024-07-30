@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Black Homepage</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <nav class="navbar">
+        <div class="icon-container">
+            <img src="path/to/your/icon.png" alt="Icon" class="icon">
+        </div>
+        <ul>
+            <li><a href="index.html">Dashboard</a></li>
+            <li><a href="customer.html">Customers</a></li>
+            <li><a class="small-button" href="view-reports.html">View Reports</a></li>
+            <li><a href="transactions.html">Transactions</a></li>
+        </ul>
+    </nav>
+    <div class="content">
+        <div class="user-details-box">
+            <div class="user-picture">
+                <img src="https://www.bing.com/th?id=OIP.PgJQ6YMfE4ac5WpU8mVwhwAAAA&w=150&h=222&c=8&rs=1&qlt=90&o=6&dpr=2.3&pid=3.1&rm=2" alt="User Picture" id="user-picture">
+            </div>
+            <div class="user-info">
+                <p id="user-name">Name: Muthu Rajesh</p>
+                <p id="user-birthdate">Birthdate: January 1, 1990</p>
+                <p id="user-nric">IC Number: 12345678</p>
+            </div>
+            <button class="edit-button" onclick="location.href='edit-profile.html'">Edit</button>
+        </div>
+        <div class="container">
+            <h1>hs</h1>
+        </div>
+        <div class="side-boxes">
+            <div class="small-box">
+                <p>Inbox</p>
+            </div>
+            <div class="tall-box">
+                <p>Notifications</p>
+            </div>
+        </div>
+    </div>
+
+    <script>
+        // Get user profile information from local storage
+        const userProfile = JSON.parse(localStorage.getItem('userProfile'));
+
+        if (userProfile) {
+            document.getElementById('user-name').textContent = `Name: ${userProfile.name}`;
+            document.getElementById('user-birthdate').textContent = `Birthdate: ${userProfile.birthdate}`;
+            document.getElementById('user-nric').textContent = `IC Number: ${userProfile.nric}`;
+            document.getElementById('user-picture').src = userProfile.profilePhoto;
+        }
+    </script>
+</body>
+</html>
+
+
+
