@@ -46,7 +46,7 @@ searchForm.addEventListener('submit', (e) => {
         }
 
         if (foundCustomer) {
-            // Redirect to profile page with customer details
+
             window.location.href = `profile.html?name=${encodeURIComponent(foundCustomer.name)}&birthdate=${encodeURIComponent(foundCustomer.birthdate)}&ic=${encodeURIComponent(foundCustomer.icNumber)}&picture=${encodeURIComponent(foundCustomer.picture)}`;
         } else {
             searchResultsDiv.innerHTML = 'No customer found.';

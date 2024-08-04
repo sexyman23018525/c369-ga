@@ -2,7 +2,6 @@ window.addEventListener('load', function() {
     const urlParams = new URLSearchParams(window.location.search);
     const customerId = urlParams.get('id');
 
-    // Mock data for demonstration
     const customers = [
         { id: 1, name: 'John Doe', phone: '1234567890', birthdate: 'January 1, 1990', ic: '12345678', picture: '\Users\nistc\Downloads\john.jpg' },
         { id: 2, name: 'Jane Smith', phone: '0987654321', birthdate: 'February 2, 1992', ic: '87654321', picture: 'path/to/jane-picture.png' },

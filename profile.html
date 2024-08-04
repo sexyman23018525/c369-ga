@@ -90,7 +90,7 @@
             box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
             max-width: 500px;
             flex-grow: 1;
-            margin-left: 20px; /* Added margin for spacing */
+            margin-left: 20px; 
         }
         .transactions-box h2 {
             margin-top: 0;
@@ -101,6 +101,15 @@
         }
         .transaction:last-child {
             border-bottom: none;
+        }
+        .transaction-link.red {
+            color: red;
+        }
+        .transaction-link {
+            text-decoration: none; 
+        }
+        .transaction-link:hover {
+            text-decoration: underline; 
         }
         .side-boxes {
             display: flex;
@@ -143,21 +152,21 @@
         </div>
         <div class="transactions-box">
             <h2>Transactions</h2>
-            <a href="transaction.html" class="transaction-link">
+            <a href="transaction1.html" class="transaction-link red">
                 <div class="transaction">
                     <p><strong>Date:</strong> July 1, 2024</p>
-                    <p><strong>Amount:</strong> $150.00</p>
+                    <p><strong>Amount:</strong> $1500.00</p>
                     <p><strong>Description:</strong> Purchase at Store A</p>
                 </div>
             </a>
-            <a href="transaction.html" class="transaction-link">
+            <a href="transaction2.html" class="transaction-link">
                 <div class="transaction">
                     <p><strong>Date:</strong> July 10, 2024</p>
                     <p><strong>Amount:</strong> $200.00</p>
                     <p><strong>Description:</strong> Payment Received</p>
                 </div>
             </a>
-            <a href="transaction.html" class="transaction-link">
+            <a href="transaction3.html" class="transaction-link">
                 <div class="transaction">
                     <p><strong>Date:</strong> July 15, 2024</p>
                     <p><strong>Amount:</strong> $75.00</p>
@@ -191,6 +200,7 @@
     </script>
 </body>
 </html>
+
 
 
 

@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Transactions</title>
+    <link rel="stylesheet" href="styles.css">
+    <style>
+        body, html {
+            margin: 0;
+            padding: 0;
+            width: 100%;
+            height: 100%;
+            background-color: black;
+            color: white;
+            font-family: Arial, sans-serif;
+        }
+        
+        .navbar {
+            display: flex;
+            align-items: center;
+            width: 100%;
+            background-color: darkred;
+            overflow: hidden;
+            height: 50px; 
+        }
+        
+        .icon-container {
+            display: flex;
+            align-items: center;
+            padding: 10px;
+        }
+        
+        .icon {
+            width: 30px;
+            height: 30px;
+        }
+        
+        .navbar ul {
+            display: flex;
+            list-style-type: none;
+            margin: 0;
+            padding: 0;
+        }
+        
+        .navbar li {
+            flex: 1;
+            margin: 0 10px; 
+        }
+        
+        .navbar li a {
+            display: block;
+            color: white;
+            text-align: center;
+            padding: 14px 20px;
+            text-decoration: none;
+        }
+        
+        .navbar li a:hover {
+            background-color: #111;
+        }
+        
+        .navbar li a.small-button {
+            padding: 10px 15px; 
+            font-size: 0.9em; 
+        }
+        
+        .content {
+            display: flex;
+            justify-content: flex-start; 
+            align-items: flex-start;
+            height: calc(100% - 50px); 
+            padding: 20px;
+            box-sizing: border-box; 
+        }
+        
+        .transaction-details {
+            background-color: white;
+            color: black;
+            padding: 20px;
+            border-radius: 10px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+            max-width: 300px;
+            width: 100%; 
+        }
+        
+    </style>
+</head>
+<body>
+    <div class="navbar">
+        <div class="icon-container">
+            <img src="icon.png" alt="icon" class="icon">
+        </div>
+        <ul>
+            <li><a href="index.html">Dashboard</a></li>
+            <li><a href="customer.html">Customers</a></li>
+            <li><a class="small-button" href="view-reports.html">View Reports</a></li>
+            <li><a href="profile.html">Back</a></li>
+        </ul>
+    </div>
+    <div class="content">
+        <div class="transaction-details">
+            <h2>Transaction Details</h2>
+            <p class="transaction"><strong>Transaction id:</strong>03</p>
+            <p class="transaction"><strong>Date:</strong> May 30, 2024</p>
+            <p class="transaction"><strong>Time of transaction:</strong>12:32am</p>
+            <p class="transaction"><strong>Sender</strong>John Doe</p>
+            <p class="transaction"><strong>Receiver</strong>Spotify</p>
+        </div>
+    </div>
+</body>
+</html>

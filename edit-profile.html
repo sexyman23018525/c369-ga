@@ -54,14 +54,11 @@
             xhr.onload = function() {
                 if (xhr.status === 200) {
                     console.log('Profile updated successfully!');
-    
-                    // Get the updated user profile information from the response
+
                     const userProfile = JSON.parse(xhr.responseText);
     
-                    // Update local storage with the new user profile information
                     localStorage.setItem('userProfile', JSON.stringify(userProfile));
     
-                    // Redirect to index page
                     window.location.href = 'index.html';
                 } else {
                     console.error('Error updating profile:', xhr.statusText);

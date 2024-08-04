@@ -36,7 +36,7 @@ body, html {
 
 .navbar li {
     flex: 1;
-    margin: 0 10px; /* Adding margin to space out the links */
+    margin: 0 10px; 
 }
 
 .navbar li a {
@@ -51,17 +51,16 @@ body, html {
     background-color: #111;
 }
 
-/* Specific style for the "View Reports" button */
 .navbar li a.small-button {
-    padding: 10px 15px; /* Smaller padding for the "View Reports" button */
-    font-size: 0.9em; /* Smaller font size for the "View Reports" button */
+    padding: 10px 15px;
+    font-size: 0.9em; 
 }
 
 .content {
     display: flex;
     justify-content: center;
     align-items: flex-start;
-    height: calc(100% - 50px); /* Adjusting height to account for navbar */
+    height: calc(100% - 50px);
     padding: 20px;
 }
 
